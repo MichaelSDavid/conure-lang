@@ -4,19 +4,16 @@
 write("|TEST 1: Arithmetic|");
 
 write(1 + 2 + 3 + 4 + 5);
-write(""); // New line
 
 // 2 (Boolean logic)
 write("|TEST 2: Boolean Logic|");
 
 write(!(5 - 4 > 3 * 2 == !null));
-write(""); // New line
 
 // 3 (String operations)
 write("|TEST 3: String Operations|");
 
 write("st" + "ri" + "ng");
-write(""); // New line
 
 // 4 (Global variable operations)
 write("|TEST 4: Variable Operations|");
