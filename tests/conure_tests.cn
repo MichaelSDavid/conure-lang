@@ -18,10 +18,34 @@ write("|TEST 3: String Operations|");
 write("st" + "ri" + "ng");
 write(""); // New line
 
-// 4 (Variable operations)
+// 4 (Global variable operations)
 write("|TEST 4: Variable Operations|");
 
 let breakfast = "beignets";
 let beverage = "cafe au lait";
 breakfast = "beignets with " + beverage;
 write(breakfast);
+
+// 5 (Blocks and local variable operations)
+write("|TEST 4: Variable Operations|");
+
+{
+  let a = "outer";
+  {
+    let a = "inner";
+  }
+}
+
+// ERROR CASES (for testing error handling)
+
+//{
+//  let a = "first";
+//  let a = "second";
+//}
+
+//{
+//  let a = "outer";
+//  {
+//    let a = a;
+//  }
+//}
