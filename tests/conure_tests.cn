@@ -1,0 +1,27 @@
+// Once debug logs are out of the way this will be much smoother, also 'write' may turn to only a function later on
+
+// 1 (Arithmetic)
+write("|TEST 1: Arithmetic|");
+
+write(1 + 2 + 3 + 4 + 5);
+write(""); // New line
+
+// 2 (Boolean logic)
+write("|TEST 2: Boolean Logic|");
+
+write(!(5 - 4 > 3 * 2 == !null));
+write(""); // New line
+
+// 3 (String operations)
+write("|TEST 3: String Operations|");
+
+write("st" + "ri" + "ng");
+write(""); // New line
+
+// 4 (Variable operations)
+write("|TEST 4: Variable Operations|");
+
+let breakfast = "beignets";
+let beverage = "cafe au lait";
+breakfast = "beignets with " + beverage;
+write(breakfast);
