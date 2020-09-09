@@ -9,7 +9,9 @@
 
 # Symlinks
 /scripts/web_sc.sh
+/scripts/repo.sh
 web_sc
+repo
 conure
 comp_pro
 generate
