@@ -1,7 +1,7 @@
 clear
 
 # #!/bin/zsh
-cd tests
+cd ../tests
 
 # tput setaf 2; echo "[+] Building project..."
 echo "[+] Running test file(s)..."
