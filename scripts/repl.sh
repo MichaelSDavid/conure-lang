@@ -1,1 +1,2 @@
-./build/conure
+cd ../build
+./conure

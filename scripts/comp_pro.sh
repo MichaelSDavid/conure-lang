@@ -1,7 +1,7 @@
 clear
 
 # #!/bin/zsh
-cd build
+cd ../build
 
 # tput setaf 2; echo "[+] Building project..."
 echo "[+] Compiling project for release..."
@@ -10,7 +10,7 @@ echo "[+] Compiling project for release..."
 sleep 1
 # echo "\033[0m"
 clear
-gcc ../*.c -o conure -w
+gcc ../src/*.c -o conure -w
 
 echo "|DEPLOYED|"
 # exit 0
