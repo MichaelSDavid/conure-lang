@@ -1,6 +1,7 @@
 clear
 
 # #!/bin/zsh
+mkdir -p build
 cd build
 
 # tput setaf 2; echo "[+] Building project..."

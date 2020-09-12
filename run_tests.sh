@@ -1,3 +1,4 @@
+# Requires conure to already be built in /build
 clear
 
 # #!/bin/zsh

@@ -1,6 +1,7 @@
 clear
 
 # #!/bin/zsh
+mkdir -p build
 cd build
 
 if [ $# -eq 0 ]
