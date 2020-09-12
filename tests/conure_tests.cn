@@ -1,4 +1,5 @@
-// Once debug logs are out of the way this will be much smoother, also 'write' may turn to only a function later on
+// Once debug logs are out of the way this will be much smoother
+// Also 'write' may turn to only a function later on
 
 // 1 (Arithmetic)
 write("|TEST 1: Arithmetic|");
@@ -34,7 +35,6 @@ write("|TEST 5: Blocks and Locals|");
 }
 
 // ERROR CASES (for testing error handling)
-
 //{
 //  let a = "first";
 //  let a = "second";
@@ -65,7 +65,8 @@ while (b < 10) {
   b = b + 1;
 }
 
-for (let i = 1; i < 10; i = i + 1) { // TODO: Add short assignment (i.e, +=, -=, etc.)
+// TODO: Add short assignment (i.e, +=, -=, etc.)
+for (let i = 1; i < 10; i = i + 1) {
   write(i);
 }
 
@@ -77,6 +78,9 @@ fun fib(n) {
   return fib(n - 2) + fib(n - 1);
 }
 
-let start = clock();
+let start = clock(); // Built-in exec-time function
+// TODO: Increase margin of switching to sci-notation
 write(fib(10));
-write(clock() - start); // Upwards of 'fib(25)' can take up to 5 minutes to finish execution (TODO: optimize recursion)
+// Upwards of 'fib(25)' can take up to 5 minutes to finish execution 
+// (3 seconds without debug info, like Python) (TODO: optimize recursion)
+write(clock() - start);
