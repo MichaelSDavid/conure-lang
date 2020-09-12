@@ -79,4 +79,4 @@ fun fib(n) {
 
 let start = clock();
 write(fib(10));
-write(clock() - start); // Upwards of 'fib(25)' can take up to 5 minutes to finish execution, yikes (TODO: optimize recursion)
+write(clock() - start); // Upwards of 'fib(25)' can take up to 5 minutes to finish execution (TODO: optimize recursion)
