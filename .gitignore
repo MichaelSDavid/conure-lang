@@ -8,15 +8,9 @@
 *.sublime-project
 
 # Symlinks
-/scripts/web_sc.sh
-/scripts/repo.sh
-web_sc
-repo
-conure
-comp_pro
-generate
-repl
-run_tests
+web_sc.sh
+gh_repo.sh
+Conure
 
 # Prerequisites
 *.d

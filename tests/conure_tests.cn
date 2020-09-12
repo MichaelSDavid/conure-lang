@@ -65,6 +65,18 @@ while (b < 10) {
   b = b + 1;
 }
 
-for (let i = 1; i < 10; i = i + 1) {
+for (let i = 1; i < 10; i = i + 1) { // TODO: Add short assignment (i.e, +=, -=, etc.)
   write(i);
 }
+
+// 7 (Functions and closures)
+write("|TEST 7: Functional Operations|");
+
+fun fib(n) {
+  if (n < 2) return n;
+  return fib(n - 2) + fib(n - 1);
+}
+
+let start = clock();
+write(fib(10));
+write(clock() - start); // Upwards of 'fib(25)' can take up to 5 minutes to finish execution, yikes (TODO: optimize recursion)

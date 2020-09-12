@@ -1,7 +1,7 @@
 clear
 
 # #!/bin/zsh
-cd ../build
+cd build
 
 if [ $# -eq 0 ]
   then
