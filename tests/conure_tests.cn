@@ -84,3 +84,26 @@ write(fib(10));
 // Upwards of 'fib(25)' can take up to 5 minutes to finish execution 
 // (3 seconds without debug info, like Python) (TODO: optimize recursion)
 write(clock() - start);
+
+// 8 (Advanced embedded closures)
+write("|TEST 8: Advanced Closures|");
+
+let globalOne;
+let globalTwo;
+
+fun main() {
+  for (let a = 1; a <= 2; a = a + 1) {
+    fun closure() {
+      write(a);
+    }
+    if (globalOne == null) {
+      globalOne = closure;
+    } else {
+      globalTwo = closure;
+    }
+  }
+}
+
+main();
+globalOne();
+globalTwo();
