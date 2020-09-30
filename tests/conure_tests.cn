@@ -107,3 +107,17 @@ fun main() {
 main();
 globalOne();
 globalTwo();
+
+// 8 (Garbage collection)
+write("|TEST 8: Garbage Collection|");
+
+fun makeClosure() {
+  let a = "data";
+
+  fun f() { write(a); }
+  return f;
+}
+
+let closure = makeClosure();
+// Garbage collection here
+closure();
