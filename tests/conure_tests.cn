@@ -1,5 +1,6 @@
 // Once debug logs are out of the way this will be much smoother
 // Also 'write' may turn to only a function later on
+// TODO: Add relative path finding for files according to PWD
 
 // 1 (Arithmetic)
 write("|TEST 1: Arithmetic|");
@@ -121,3 +122,13 @@ fun makeClosure() {
 let closure = makeClosure();
 // Garbage collection here
 closure();
+
+// 9 (Classes and instances)
+write("|TEST 9: Classes and Instances|");
+
+class Pair {}
+
+let pair = Pair();
+pair.first = 1;
+pair.second = 2;
+write(pair.first + pair.second); // 3
