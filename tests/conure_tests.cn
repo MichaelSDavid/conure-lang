@@ -3,30 +3,30 @@
 // TODO: Add relative path finding for files according to PWD
 
 // 1 (Arithmetic)
-write "|TEST 1: Arithmetic|";
+write("|TEST 1: Arithmetic|");
 
-write 1 + 2 + 3 + 4 + 5;
+write(1 + 2 + 3 + 4 + 5);
 
 // 2 (Boolean logic)
-write "|TEST 2: Boolean Logic|";
+write("|TEST 2: Boolean Logic|");
 
-write !(5 - 4 > 3 * 2 == !null);
+write(!(5 - 4 > 3 * 2 == !null));
 
 // 3 (String operations)
-write "|TEST 3: String Operations|";
+write("|TEST 3: String Operations|");
 
-write "st" + "ri" + "ng";
+write("st" + "ri" + "ng");
 
 // 4 (Global variable operations)
-write "|TEST 4: Variable Operations|";
+write("|TEST 4: Variable Operations|");
 
 let breakfast = "beignets";
 let beverage = "cafe au lait";
 breakfast = "beignets with " + beverage;
-write breakfast;
+write(breakfast);
 
 // 5 (Blocks and local variable operations)
-write "|TEST 5: Blocks and Locals|";
+write("|TEST 5: Blocks and Locals|");
 
 {
   let a = "outer";
@@ -49,30 +49,30 @@ write "|TEST 5: Blocks and Locals|";
 //}
 
 // 6 (Conditional statements and loops)
-write "|TEST 6: Control Flow|";
+write("|TEST 6: Control Flow|");
 
 let a = 1; // OR: a = 4, a = 5;
 if (a <= 2) {
-  write "yes";
+  write("yes");
 } else if (a == 4) {
-	write "maybe";
+	write("maybe");
 } else {
-  write "no";
+  write("no");
 }
 
 let b = 1;
 while (b < 10) {
-  write b;
+  write(b);
   b = b + 1;
 }
 
 // TODO: Add short assignment (i.e, +=, -=, etc.)
 for (let i = 1; i < 10; i = i + 1) {
-  write i;
+  write(i);
 }
 
 // 7 (Functions and closures)
-write "|TEST 7: Functional Operations|";
+write("|TEST 7: Functional Operations|");
 
 fun fib(n) {
   if (n < 2) return n;
@@ -81,13 +81,13 @@ fun fib(n) {
 
 let start = clock(); // Built-in exec-time function
 // TODO: Increase margin of switching to sci-notation
-write fib(10);
+write(fib(10));
 // Upwards of 'fib(25)' can take up to 5 minutes to finish execution 
 // (3 seconds without debug info, like Python) (TODO: optimize recursion)
-write (clock() - start);
+write(clock() - start);
 
 // 8 (Advanced embedded closures)
-write "|TEST 8: Advanced Closures|";
+write("|TEST 8: Advanced Closures|");
 
 let globalOne;
 let globalTwo;
@@ -95,7 +95,7 @@ let globalTwo;
 fun main() {
   for (let a = 1; a <= 2; a = a + 1) {
     fun closure() {
-      write a;
+      write(a);
     }
     if (globalOne == null) {
       globalOne = closure;
@@ -110,12 +110,12 @@ globalOne();
 globalTwo();
 
 // 8 (Garbage collection)
-write "|TEST 8: Garbage Collection|";
+write("|TEST 8: Garbage Collection|");
 
 fun makeClosure() {
   let a = "data";
 
-  fun f() { write a; }
+  fun f() { write(a); }
   return f;
 }
 
@@ -124,14 +124,14 @@ let closure = makeClosure();
 closure();
 
 // 9 (Classes and instances)
-write "|TEST 9: Classes and Instances|";
+write("|TEST 9: Classes and Instances|");
 
 class Pair {}
 
 let pair = Pair();
 pair.first = 1;
 pair.second = 2;
-write pair.first + pair.second; // 3
+write(pair.first + pair.second); // 3
 
 // 10 (Methods and constructors)
 write "|TEST 10: Methods and Initializers|";
@@ -142,11 +142,11 @@ class CoffeeMaker {
   }
 
   brew() {
-    write "Enjoy your cup of " + this.coffee;
+    write("Enjoy your cup of " + this.coffee);
 
     this.coffee = null;
   }
 }
 
-var maker = CoffeeMaker("coffee and chicory");
+let maker = CoffeeMaker("coffee and chicory");
 maker.brew();
