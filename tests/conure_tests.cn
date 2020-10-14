@@ -1,6 +1,8 @@
 // Once debug logs are out of the way this will be much smoother
 // Also 'write' may turn to only a function later on
+// TODO: Add multi-line comments
 // TODO: Add relative path finding for files according to PWD
+// TODO: Add interactive history in the REPL
 
 // 1 (Arithmetic)
 write("|TEST 1: Arithmetic|");
@@ -134,7 +136,7 @@ pair.second = 2;
 write(pair.first + pair.second); // 3
 
 // 10 (Methods and constructors)
-write "|TEST 10: Methods and Initializers|";
+write("|TEST 10: Methods and Initializers|");
 
 class CoffeeMaker {
   init(coffee) {
@@ -150,3 +152,24 @@ class CoffeeMaker {
 
 let maker = CoffeeMaker("coffee and chicory");
 maker.brew();
+
+// 11 (Advanced OOP and inheritance)
+write("|TEST 11: Superclasses and Inheritance|");
+
+class Donut {
+  cook() {
+    print "Fry until golden brown";
+    inner();
+    print "Place in a nice box";
+  }
+}
+
+// Default C#/D highlights this below line as an error
+// Maybe modify the syntax highlighting and linting for Conure 
+class BostonCream < Donut {//EXR3
+  cook() {
+    write("Pipe full of custard and coat with chocolate");
+  }
+}
+
+BostonCream().cook();
