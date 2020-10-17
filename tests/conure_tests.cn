@@ -1,5 +1,5 @@
 // Once debug logs are out of the way this will be much smoother
-// Also 'write' may turn to only a function later on
+// Also 'write' may turn to only a function later on (brackets for working highlighting)
 // TODO: Add multi-line comments
 // TODO: Add interactive history in the REPL
 
@@ -7,16 +7,19 @@
 write("|TEST 1: Arithmetic|");
 
 write(1 + 2 + 3 + 4 + 5);
+write(""); // Separation (TODO: Add escape characters)
 
 // 2 (Boolean logic)
 write("|TEST 2: Boolean Logic|");
 
 write(!(5 - 4 > 3 * 2 == !none));
+write(""); // Separation
 
 // 3 (String operations)
 write("|TEST 3: String Operations|");
 
 write("st" + "ri" + "ng");
+write(""); // Separation
 
 // 4 (Global variable operations)
 write("|TEST 4: Variable Operations|");
@@ -25,6 +28,7 @@ let breakfast = "beignets";
 let beverage = "cafe au lait";
 breakfast = "beignets with " + beverage;
 write(breakfast);
+write(""); // Separation
 
 // 5 (Blocks and local variable operations)
 write("|TEST 5: Blocks and Locals|");
@@ -35,6 +39,8 @@ write("|TEST 5: Blocks and Locals|");
     let a = "inner";
   }
 }
+
+write("--no output--\n"); // Separation
 
 // ERROR CASES (for testing error handling)
 //{
@@ -72,10 +78,12 @@ for (let i = 1; i < 10; i = i + 1) {
   write(i);
 }
 
+write(""); // Separation
+
 // 7 (Functions and closures)
 write("|TEST 7: Functional Operations|");
 
-fun fib(n) {
+fnc fib(n) {
   if (n < 2) return n;
   return fib(n - 2) + fib(n - 1);
 }
@@ -87,15 +95,17 @@ write(fib(10));
 // (3 seconds without debug info, like Python) (TODO: optimize recursion)
 write(time() - start);
 
+write(""); // Separation
+
 // 8 (Advanced embedded closures)
 write("|TEST 8: Advanced Closures|");
 
 let globalOne;
 let globalTwo;
 
-fun main() {
+fnc main() {
   for (let a = 1; a <= 2; a = a + 1) {
-    fun closure() {
+    fnc closure() {
       write(a);
     }
     if (globalOne == none) {
@@ -110,19 +120,23 @@ main();
 globalOne();
 globalTwo();
 
+write(""); // Separation
+
 // 8 (Garbage collection)
 write("|TEST 8: Garbage Collection|");
 
-fun makeClosure() {
+fnc makeClosure() {
   let a = "data";
 
-  fun f() { write(a); }
+  fnc f() { write(a); }
   return f;
 }
 
 let closure = makeClosure();
 // Garbage collection here
 closure();
+
+write(""); // Separation
 
 // 9 (Classes and instances)
 write("|TEST 9: Classes and Instances|");
@@ -133,6 +147,8 @@ let pair = Pair();
 pair.first = 1;
 pair.second = 2;
 write(pair.first + pair.second); // 3
+
+write(""); // Separation
 
 // 10 (Methods and constructors)
 write("|TEST 10: Methods and Initializers|");
@@ -151,6 +167,8 @@ class CoffeeMaker {
 
 let maker = CoffeeMaker("coffee and chicory");
 maker.brew();
+
+write(""); // Separation
 
 // 11 (Advanced OOP and inheritance)
 write("|TEST 11: Superclasses and Inheritance|");
@@ -172,3 +190,40 @@ class BostonCream < Donut {//EXR3
 }
 
 BostonCream().cook();
+
+write(""); // Separation
+
+// 12 (Large-scale optimization)
+write("|TEST 11: Large-Scale Optimization|"); // Speed benchmark
+
+class Zoo {
+  init() {
+    this.aardvark = 1;
+    this.baboon   = 1;
+    this.cat      = 1;
+    this.donkey   = 1;
+    this.elephant = 1;
+    this.fox      = 1;
+  }
+  ant()    { return this.aardvark; }
+  banana() { return this.baboon; }
+  tuna()   { return this.cat; }
+  hay()    { return this.donkey; }
+  grass()  { return this.elephant; }
+  mouse()  { return this.fox; }
+}
+
+let zoo = Zoo();
+let sum = 0;
+let start = time();
+while (sum < 100000000) {
+  sum = sum + zoo.ant()
+            + zoo.banana()
+            + zoo.tuna()
+            + zoo.hay()
+            + zoo.grass()
+            + zoo.mouse();
+}
+
+write(time() - start);
+write(sum);
