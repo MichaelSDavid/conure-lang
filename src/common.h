@@ -5,8 +5,7 @@
 #include <stddef.h>
 #include <stdint.h>
 
-// TODO: NaN boxing
-// #define NAN_BOXING
+#define NAN_BOXING
 #define DEBUG_PRINT_CODE
 #define DEBUG_TRACE_EXECUTION
 

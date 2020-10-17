@@ -1,7 +1,6 @@
 // Once debug logs are out of the way this will be much smoother
 // Also 'write' may turn to only a function later on
 // TODO: Add multi-line comments
-// TODO: Add relative path finding for files according to PWD
 // TODO: Add interactive history in the REPL
 
 // 1 (Arithmetic)
@@ -12,7 +11,7 @@ write(1 + 2 + 3 + 4 + 5);
 // 2 (Boolean logic)
 write("|TEST 2: Boolean Logic|");
 
-write(!(5 - 4 > 3 * 2 == !null));
+write(!(5 - 4 > 3 * 2 == !none));
 
 // 3 (String operations)
 write("|TEST 3: String Operations|");
@@ -99,7 +98,7 @@ fun main() {
     fun closure() {
       write(a);
     }
-    if (globalOne == null) {
+    if (globalOne == none) {
       globalOne = closure;
     } else {
       globalTwo = closure;
@@ -146,7 +145,7 @@ class CoffeeMaker {
   brew() {
     write("Enjoy your cup of " + this.coffee);
 
-    this.coffee = null;
+    this.coffee = none;
   }
 }
 
@@ -158,9 +157,9 @@ write("|TEST 11: Superclasses and Inheritance|");
 
 class Donut {
   cook() {
-    print "Fry until golden brown";
+    write("Fry until golden brown");
     inner();
-    print "Place in a nice box";
+    write("Place in a nice box");
   }
 }
 
