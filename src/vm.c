@@ -71,7 +71,7 @@ void initVM() {
 
   // Internal functions
   vm.initString = copyString("init", 4);
-  defineNative("clock", clockNative);
+  defineNative("time", clockNative);
 }
 
 void freeVM() {

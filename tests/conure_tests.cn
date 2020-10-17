@@ -81,12 +81,12 @@ fun fib(n) {
   return fib(n - 2) + fib(n - 1);
 }
 
-let start = clock(); // Built-in exec-time function
+let start = time(); // Built-in exec-time function
 // TODO: Increase margin of switching to sci-notation
 write(fib(10));
 // Upwards of 'fib(25)' can take up to 5 minutes to finish execution 
 // (3 seconds without debug info, like Python) (TODO: optimize recursion)
-write(clock() - start);
+write(time() - start);
 
 // 8 (Advanced embedded closures)
 write("|TEST 8: Advanced Closures|");
