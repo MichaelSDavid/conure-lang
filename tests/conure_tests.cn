@@ -6,7 +6,7 @@
 // 1 (Arithmetic)
 write("|TEST 1: Arithmetic|");
 
-write(1 + 2 + 3 + 4 + 5);
+write(1 + 2 + 3 + 4 + 5); // TODO: Add direct interpreting of strings/integers without write for REPL
 write(""); // Separation (TODO: Add escape characters)
 
 // 2 (Boolean logic)
