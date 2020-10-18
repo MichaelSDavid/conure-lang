@@ -263,4 +263,4 @@ Features planned to be implemented in the future (in no specific order or time f
 - File and module imports
 - Built-in modules like one for math, iteration tools, etc
 - Interactive REPL history
-- Optional compiler
+- Optional compiler (like how [Lua](https://www.lua.org) has `luac`)
