@@ -144,7 +144,7 @@ pair.second = 2;
 write(pair.first + pair.second); // 3
 ```
 
-Methods and initialization is also supported following a similar to JS with no function keyword prefix, `this` for self-reference, and the constructor this time being `init()`
+Methods and initializers are also supported following a similar to JS with no function keyword prefix, `this` for self-reference, and the constructor this time being `init()`
 ```cs
 class CoffeeMaker {
   init(coffee) {
