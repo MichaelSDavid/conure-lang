@@ -80,7 +80,7 @@ let a = 1;
 if (a <= 2) {
   write("yes"); // This branch gets called -> yes
 } else if (a == 4) {
-	write("maybe");
+  write("maybe");
 } else {
   write("no");
 }
