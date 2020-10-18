@@ -40,7 +40,7 @@ write("|TEST 5: Blocks and Locals|");
   }
 }
 
-write("--no output--\n"); // Separation
+write("--no output--"); // Separation
 
 // ERROR CASES (for testing error handling)
 //{
