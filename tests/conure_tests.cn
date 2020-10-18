@@ -183,7 +183,7 @@ class Donut {
 
 // Default C#/D highlights this below line as an error
 // Maybe modify the syntax highlighting and linting for Conure 
-class BostonCream < Donut {//EXR3
+class BostonCream < Donut {//MTF-ERR
   cook() {
     write("Pipe full of custard and coat with chocolate");
   }
