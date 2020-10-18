@@ -71,7 +71,7 @@ Nesting is included with general curly braces and structures like if-series, loo
 ```
 
 ### Boolean Statements and Operations
-You got your `true` and `false` as well as logical operators like `and, or, !` (`!` -> not)<br/>
+You got your `true` and `false`, as well as logical operators like `and, or, !` (`!` -> not), and comparison symbols `<, >, ==, !=, <=, >=`.
 If-series uses the keyword `if` for the start, else-ifs are a conjunction of the keywords `else` and `if`, and elses stay under the single keyword `else`
 ```cs
 write(!(5 - 4 > 3 * 2 == !none)); // true
@@ -161,7 +161,7 @@ class CoffeeMaker {
 let maker = CoffeeMaker("coffee and chicory");
 maker.brew(); // Enjoy your cup of coffee and chicory
 ```
-Superclasses and inheritance are also supported through the less than (`<`) operator, like an arrow pointing to the new class
+Superclasses and inheritance are also supported through the less-than operator(`<`), like an arrow pointing to the new class
 ```cs
 class Donut {
   cook() {
