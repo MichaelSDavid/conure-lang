@@ -1,5 +1,5 @@
 # Conure
-A small, dynamically-typed, object-oriented scripting language made in C that takes inspiration from Python, JS, and Ruby.
+A small, dynamically-typed, object-oriented scripting language written in C that takes inspiration from Python, JS, and Ruby.
 Visit `docs/info.md` for a tour of the language features (`docs/conure.cfg` for context-free grammar)<br/>
 **Contributions are welcome!**<br/>
 <br/>
