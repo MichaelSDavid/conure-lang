@@ -33,7 +33,7 @@ write("Highlighted using C#'s syntax");
 
 ### Naming Rule
 As most languages follow, don't start with a number, use a symbol, use a keyword, or have whitespace for a variable name<br>
-(Also make sure to terminate the line with a semicolon)
+(Also make sure to terminate each line with a semicolon)
 ```cs
 VALID
 snakes_are_cool
