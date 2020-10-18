@@ -22,7 +22,7 @@ let if else while for fnc class return none true false and or this super write
 time() init()
 ```
 ### Printing
-The keyword for printing is `write` akin to D's `write()`
+The keyword for printing is `write` akin to [D](https://dlang.org)'s `write()`
 ```cs
 write "This has been printed";
 
