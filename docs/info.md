@@ -249,7 +249,7 @@ print(time() - start)
 print(sum);
 ```
 
-And the speed in incredibly close (first number is the execution time in seconds)
+And the speed is incredibly close (first number is the execution time in seconds)
 ![versus](./versus.png)
 
 ### Planned Implementations
