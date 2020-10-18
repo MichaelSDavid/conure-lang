@@ -1,7 +1,6 @@
 # Requires conure to already be built in /build
 clear
 
-# #!/bin/zsh
 cd tests
 
 # tput setaf 2; echo "[+] Building project..."
