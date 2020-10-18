@@ -250,7 +250,7 @@ print(sum);
 ```
 
 And the speed in incredibly close (first number is the execution time in seconds)
-![versus](https://pasteboard.co/Jwgvd59.png)
+![versus](./versus.png)
 
 ### Planned Implementations
 Features planned to be implemented in the future (in no specific order or time frame) are:
