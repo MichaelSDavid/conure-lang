@@ -133,7 +133,7 @@ globalTwo(); // 3
 ```
 
 ### Classes and OOP
-Conure is object-oriented and such has support for classes. They are declared with the `class` keyword, can have multiple attributes, and be instantiated like below
+Conure is object-oriented and as such has support for classes. They are declared with the `class` keyword, can have multiple attributes, and be instantiated like below
 ```cs
 class Pair {}
 
