@@ -9,7 +9,7 @@
 
 static void repl() {
   char line[1024];
-  printf("[Conure v0.1.0-alpha]\n");
+  printf("[Conure v1.0]\n");
   for (;;) {
     printf(">> ");
 
