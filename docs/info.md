@@ -255,7 +255,7 @@ And the speed in incredibly close (first number is the execution time in seconds
 ### Planned Implementations
 Features planned to be implemented in the future (in no specific order or time frame) are:
 - Multi-line comments and docstrings
-- Lists
+- Lists and otehr such iterables
 - Loop statements like `break` and `continue`
 - Incremental shorthands (`+=, -=, *=, /=`) as well as escape characters (`\n, \t, \r`)
 - More built-in functions
@@ -264,3 +264,4 @@ Features planned to be implemented in the future (in no specific order or time f
 - Built-in modules like one for math, iteration tools, etc
 - Interactive REPL history
 - Optional compiler (like how [Lua](https://www.lua.org) has `luac`)
+- Syntax highlighting plugin for [VSCode](https://code.visualstudio.com) and/or [Sublime Text](https://www.sublimetext.com)
