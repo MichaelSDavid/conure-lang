@@ -55,7 +55,7 @@ bool = false; // Re-assign
 ### Arithmetic and String Operations
 Basic order of operations applies and concatenation
 ```cs
-8 / 2 * (2 + 2;) // 16
+8 / 2 * (2 + 2); // 16
 "st" + "ri" + "ng"; // string
 ```
 
