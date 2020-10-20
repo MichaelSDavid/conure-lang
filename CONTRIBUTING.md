@@ -2,7 +2,7 @@
 
 ### Guidlines
 - Make sure to be descriptive about pull requests and issues
-- Outside collaborators should make sure theyt keep everything already done intact
+- Outside collaborators should make sure they keep everything already implemented intact
 - Try to add on to things in a beneficial way that doesn't interfere with previous constructs
 - 2 sucessful pull requests will grant inside collaborator access
 - Core reworks can only be done if one is an inside collaborator
