@@ -206,7 +206,9 @@ let zoo = Zoo();
 let sum = 0;
 let start = time();
 while (sum < 100000000) {
-  sum = sum + zoo.ant() + zoo.banana() + zoo.tuna() + zoo.hay() + zoo.grass() + zoo.mouse();
+  sum = sum + zoo.ant() + zoo.banana() 
+  + zoo.tuna() + zoo.hay() 
+  + zoo.grass() + zoo.mouse();
 }
 
 write(time() - start);
@@ -243,7 +245,9 @@ zoo = Zoo();
 sum = 0;
 start = time.time()
 while sum < 100000000:
-  sum = sum + zoo.ant() + zoo.banana() + zoo.tuna() + zoo.hay() + zoo.grass() + zoo.mouse();
+  sum = sum + zoo.ant() + zoo.banana() 
+  + zoo.tuna() + zoo.hay() 
+  + zoo.grass() + zoo.mouse();
 
 print(time() - start)
 print(sum);
