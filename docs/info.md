@@ -161,7 +161,7 @@ class CoffeeMaker {
 let maker = CoffeeMaker("coffee and chicory");
 maker.brew(); // Enjoy your cup of coffee and chicory
 ```
-Superclasses and inheritance are also supported through the less-than operator(`<`), like an arrow pointing to the new class
+Superclasses and inheritance are also supported through the less-than operator(`<`), like an arrow pointing to the new class as seen in Ruby
 ```cs
 class Donut {
   cook() {
