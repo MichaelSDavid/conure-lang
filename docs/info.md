@@ -263,6 +263,7 @@ Features planned to be implemented in the future (in no specific order or time f
 - Loop statements like `break` and `continue`
 - Incremental shorthands (`+=, -=, *=, /=`) as well as escape characters (`\n, \t, \r`)
 - User input
+- Type casting
 - More built-in functions
 - More built-in math operations (such as floor/ceil and powers (`**`))
 - File and module imports
