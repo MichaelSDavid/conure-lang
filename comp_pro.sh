@@ -1,5 +1,7 @@
 clear
 
+# TODO: 32-bit compilation modification
+
 mkdir -p build
 cd build
 
