@@ -243,7 +243,7 @@ class Zoo:
 
 zoo = Zoo();
 sum = 0;
-start = time.time()
+start = time()
 while sum < 100000000:
   sum = sum + zoo.ant() + zoo.banana() 
   + zoo.tuna() + zoo.hay() 
