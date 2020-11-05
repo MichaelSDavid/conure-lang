@@ -250,7 +250,7 @@ while sum < 100000000:
   + zoo.grass() + zoo.mouse();
 
 print(time() - start)
-print(sum);
+print(sum)
 ```
 
 And the speed is incredibly close (first number is the execution time in seconds)
