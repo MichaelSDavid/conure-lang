@@ -259,6 +259,7 @@ And the speed is incredibly close (first number is the execution time in seconds
 ### Planned Implementations
 Features planned to be implemented in the future (in no specific order or time frame) are:
 - Multi-line comments and docstrings
+- x32 architecture support
 - Lists, arrays, and other such iterables
 - Loop statements like `break` and `continue`
 - Incremental shorthands (`+=, -=, *=, /=`) as well as escape characters (`\n, \t, \r`)
