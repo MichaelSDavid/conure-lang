@@ -181,7 +181,7 @@ BostonCream().cook(); // Pipe full of custard and coat with chocolate
 ```
 
 ### Performance
-Performance is comparable to Python, althought it can definitely be improved to exactly meet, and possibly surpass it
+Performance is comparable to Python, although it can definitely be improved to exactly meet, and possibly surpass it
 
 Here is a large class iteration below
 ```cs
