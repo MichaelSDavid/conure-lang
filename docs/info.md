@@ -17,7 +17,7 @@ These are used with the typical sequence of two forward slashes
 
 ### Built-in Keywords and Functions
 ```cs
-let if else while for fnc class return none true false and or this super write
+let if else while for fnc class return none true false and or this super write null
 
 time() init()
 ```
