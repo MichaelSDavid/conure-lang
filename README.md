@@ -5,3 +5,5 @@ Visit `docs/info.md` for a tour of the language features (`docs/grammar.cfg` for
 <br/>
 (Default compile scripts require [GCC](https://gcc.gnu.org)/[LLVM](http://llvm.org) (these can also be ran on Windows using [Bash](https://www.gnu.org/software/bash/)))<br/>
 (Will migrate to [CMake](https://cmake.org) if this language gets bigger)
+
+<!-- On hold momentarily -->
