@@ -10,7 +10,7 @@ echo "[+] Running test file(s)..."
 sleep 1
 # echo "\033[0m"
 clear
-echo "|In order: Arithmetic, Booleans, Strings, Variables|"
+echo "|In order: Test 1 to Test 11|"
 sleep 0.5
 ../build/conure conure_tests.cn
 echo ""
